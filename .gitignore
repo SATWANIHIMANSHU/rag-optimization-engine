@@ -1,0 +1,132 @@
+
+# =========================
+# Python / FastAPI backend
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# =========================
+# Local environment variables and secrets
+# =========================
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+secrets.*
+credentials.json
+service-account*.json
+
+# Frontend environment variables
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# =========================
+# Local databases / indexes
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+chroma.sqlite3
+data/chroma/
+data/visual_index/
+data/figure_cache/
+data/colpali_pages/
+data/transformer_pages/
+data/processed/
+data/documents/
+data/uploads/
+data/cache/
+data/tmp/
+
+# Generated model artifacts
+*.pt
+*.pth
+*.safetensors
+
+# Keep the data directory itself in Git only if a placeholder is needed
+# Create data/.gitkeep manually if you want the empty folder tracked.
+
+# =========================
+# Temporary test scripts
+# =========================
+backend/app/test_*.py
+backend/app/**/test_*.py
+tests/
+test_*.py
+*_test.py
+
+# =========================
+# Deprecated ColPali implementation
+# =========================
+backend/app/colpali/
+
+# =========================
+# Frontend / Node
+# =========================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/coverage/
+frontend/.vite/
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.npm/
+
+# =========================
+# Local project inventory files
+# =========================
+project-files.txt
+project-files-without-venv.txt
+
+# =========================
+# Generated CSV files
+# =========================
+*.csv
+
+# =========================
+# Local editor / operating-system files
+# =========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs and temporary outputs
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+# Generated index archives
+colpali_pages.zip
+visual_index.zip
+
+# Accidental duplicate ignore file
+/gitignore
